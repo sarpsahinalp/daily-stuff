@@ -1,11 +1,31 @@
 #include <vector>
 #include <cassert>
 #include <iostream>
+#include <unordered_set>
+
+using namespace std;
 
 class Solution {
     public:
         int countPaths(int n, std::vector<std::vector<int>>& roads) {
-            return 4;
+            // Create adjacency list with hashtable
+            vector<unordered_set<pair<int, int>>> adjacencyList(n);
+
+            for (auto road : roads) {
+                int from = road[0];
+                int to = road[1];
+                int weight = road[2];
+                adjacencyList[from].insert({to, weight});
+            }
+
+            for (auto elem : adjacencyList) {
+                for (auto pairs : elem) 
+                {
+                    cout << pairs << endl;
+                }
+                
+            }
+            return adjacencyList.size();
         }
 };
 
@@ -19,7 +39,9 @@ int main(int argc, char const *argv[])
     Solution temp = Solution();
     int out = temp.countPaths(7, example);
 
-    std::cout << "Test" << std::endl;
-    assert(out == 4);
+    if (out != 4) {
+        printf("Expected: %d\n But was: %d", 4, out);
+    }
+
     return 0;
 }

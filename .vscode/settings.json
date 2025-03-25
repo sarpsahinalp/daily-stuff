@@ -4,7 +4,9 @@
     ],
     "python.testing.unittestEnabled": false,
     "python.testing.pytestEnabled": true,
+    "python.testing.cwd": "${workspaceFolder}/leetcode",
     "files.associations": {
         "vector": "cpp"
-    }
+    },
+    "cmake.sourceDirectory": "/home/sarp/daily-stuff/leetcode/1976"
 }
