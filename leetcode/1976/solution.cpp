@@ -11,20 +11,6 @@ class Solution {
             // Create adjacency list with hashtable
             vector<unordered_set<pair<int, int>>> adjacencyList(n);
 
-            for (auto road : roads) {
-                int from = road[0];
-                int to = road[1];
-                int weight = road[2];
-                adjacencyList[from].insert({to, weight});
-            }
-
-            for (auto elem : adjacencyList) {
-                for (auto pairs : elem) 
-                {
-                    cout << pairs << endl;
-                }
-                
-            }
             return adjacencyList.size();
         }
 };
