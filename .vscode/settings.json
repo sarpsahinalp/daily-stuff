@@ -8,7 +8,8 @@
     "files.associations": {
         "vector": "cpp",
         "string": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "queue": "cpp"
     },
     "cmake.sourceDirectory": "/home/sarp/daily-stuff/leetcode/1976"
 }
