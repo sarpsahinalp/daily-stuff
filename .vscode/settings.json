@@ -9,7 +9,8 @@
         "vector": "cpp",
         "string": "cpp",
         "iostream": "cpp",
-        "queue": "cpp"
+        "unordered_set": "cpp",
+        "set": "cpp"
     },
     "cmake.sourceDirectory": "/home/sarp/daily-stuff/leetcode/1976"
 }
