@@ -10,7 +10,8 @@
         "string": "cpp",
         "iostream": "cpp",
         "unordered_set": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "bitset": "cpp"
     },
     "cmake.sourceDirectory": "/home/sarp/daily-stuff/leetcode/1976"
 }
